@@ -1,0 +1,10 @@
+set textwidth=80
+set shiftwidth=2
+set tabstop=2
+set expandtab
+set softtabstop=2
+set shiftround
+set autoindent
+set showcmd
+set colorcolumn=+1
+set number

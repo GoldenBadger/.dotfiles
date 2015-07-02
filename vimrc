@@ -14,22 +14,11 @@ Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
+Plugin 'jmcantrell/vim-virtualenv'
 
 call vundle#end()
 filetype plugin indent on
 " End of Vundle settings
-
-
-set textwidth=79
-set shiftwidth=4
-set tabstop=4
-set expandtab
-set softtabstop=4
-set shiftround
-set autoindent
-set showcmd
-set colorcolumn=+1
-set number
 
 syntax on
 autocmd vimenter * NERDTree
@@ -46,3 +35,6 @@ let g:airline#extensions#tabline#enabled = 1
 " Cycle through buffers
 :nnoremap <C-n> :bnext<CR>
 :nnoremap <C-p> :bprevious<CR>
+
+" Disable syntastic for Python
+let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
