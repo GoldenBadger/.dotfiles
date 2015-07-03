@@ -7,14 +7,14 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'ervandew/supertab'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'vim-scripts/a.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -38,3 +38,13 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Disable syntastic for Python
 let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_cpp_checkers = ['cppcheck', 'gcc']
