@@ -19,6 +19,18 @@ call vundle#end()
 filetype plugin indent on
 " End of Vundle settings
 
+" Default indentation settings where no language-specific settings exist.
+set textwidth=80
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set softtabstop=4
+set shiftround
+set autoindent
+set showcmd
+set colorcolumn=+1
+set number
+
 syntax on
 autocmd vimenter * NERDTree
 
@@ -34,19 +46,6 @@ let g:airline#extensions#tabline#enabled = 1
 " Cycle through buffers
 :nnoremap <C-n> :bnext<CR>
 :nnoremap <C-p> :bprevious<CR>
-
-" Disable syntastic for Python
-let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_cpp_checkers = ['cppcheck', 'gcc']
 
 " Easymotion enhanced search
 map  / <Plug>(easymotion-sn)
