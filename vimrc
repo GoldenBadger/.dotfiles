@@ -14,13 +14,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'vim-scripts/a.vim'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on
 " End of Vundle settings
 
 " Default indentation settings where no language-specific settings exist.
-set textwidth=80
 set shiftwidth=4
 set tabstop=4
 set expandtab
@@ -28,7 +28,6 @@ set softtabstop=4
 set shiftround
 set autoindent
 set showcmd
-set colorcolumn=+1
 set number
 
 syntax on
@@ -36,6 +35,9 @@ autocmd vimenter * NERDTree
 
 " Kill vim if the only window left is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Take focus away from NERDTree on startup
+autocmd VimEnter * wincmd l
 
 " Trim trailing whitespace in Python files
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
