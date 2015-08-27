@@ -1,5 +1,6 @@
 URxvt.font:xft:Terminus:size=16
 URxvt.scrollBar: false
+URxvt.geometry: 100x30
 
 ! Base16 Default
 ! Scheme: Chris Kempson (http://chriskempson.com)
