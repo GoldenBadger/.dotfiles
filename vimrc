@@ -15,6 +15,7 @@ Plugin 'bling/vim-airline'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'vim-scripts/a.vim'
 Plugin 'fatih/vim-go'
+Plugin 'vim-scripts/HTML-AutoCloseTag'
 
 call vundle#end()
 filetype plugin indent on
@@ -41,6 +42,12 @@ autocmd VimEnter * wincmd l
 
 " Trim trailing whitespace in Python files
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
+
+" Nicer <Esc>
+:inoremap jj <Esc>
+
+" Better <Leader>
+let mapleader = ","
 
 " Display all buffers when only 1 tab is open
 let g:airline#extensions#tabline#enabled = 1
