@@ -53,6 +53,7 @@ let mapleader = ","
 let g:airline#extensions#tabline#enabled = 1
 
 " Cycle through buffers
+set hidden
 :nnoremap <C-n> :bnext<CR>
 :nnoremap <C-p> :bprevious<CR>
 
