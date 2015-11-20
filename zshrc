@@ -91,3 +91,4 @@ DEFAULT_USER=terry
 export GOROOT=/usr/lib/go
 export GOPATH=$HOME/code/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export EDITOR=vim
