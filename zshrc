@@ -1,5 +1,4 @@
 powerline-daemon -q
-source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/terry/.oh-my-zsh
@@ -88,3 +87,7 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_IE.UTF-8
 
 DEFAULT_USER=terry
+
+export GOROOT=/usr/lib/go
+export GOPATH=$HOME/code/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
