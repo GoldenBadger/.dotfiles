@@ -89,6 +89,9 @@ export LC_ALL=en_IE.UTF-8
 DEFAULT_USER=terry
 
 export GOROOT=/usr/lib/go
-export GOPATH=$HOME/code/go
+export GOPATH=$HOME/code/gocode
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export EDITOR=vim
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+

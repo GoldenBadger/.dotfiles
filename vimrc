@@ -10,7 +10,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'bling/vim-airline'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'vim-scripts/a.vim'
@@ -35,7 +37,7 @@ syntax on
 autocmd vimenter * NERDTree
 
 " Kill vim if the only window left is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Take focus away from NERDTree on startup
 autocmd VimEnter * wincmd l
@@ -62,3 +64,6 @@ map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
+
+" Powerline fonts
+let g:airline_powerline_fonts = 1
