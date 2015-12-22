@@ -12,6 +12,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'rhysd/vim-clang-format'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'bling/vim-airline'
 Plugin 'jmcantrell/vim-virtualenv'
@@ -35,6 +36,7 @@ set number
 
 syntax on
 autocmd vimenter * NERDTree
+autocmd FileType cpp ClangFormatAutoToggle
 
 " Kill vim if the only window left is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -67,3 +69,6 @@ map  N <Plug>(easymotion-prev)
 
 " Powerline fonts
 let g:airline_powerline_fonts = 1
+
+" Associate *.inc with C++
+autocmd BufRead,BufNewFile *.inc set filetype=cpp
