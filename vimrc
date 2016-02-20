@@ -74,3 +74,14 @@ let g:airline_powerline_fonts = 1
 autocmd BufRead,BufNewFile *.inc set filetype=cpp
 
 nmap <Leader>C :ClangFormatAutoToggle<CR>
+
+" Toggle file associations between C and C++
+function ToggleC()
+    if &filetype == "c"
+        set filetype=cpp
+    elseif &filetype == "cpp"
+        set filetype=c
+    endif
+endfunction
+
+nmap <Leader>cp :call ToggleC()<CR>
