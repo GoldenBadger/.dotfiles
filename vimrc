@@ -67,6 +67,8 @@ omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
+let g:EasyMotion_smartcase = 1
+
 " Powerline fonts
 let g:airline_powerline_fonts = 1
 

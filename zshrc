@@ -94,3 +94,5 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export EDITOR=vim
 export CC=/usr/bin/clang
 export CXX=/usr/bin/clang++
+
+eval $(thefuck --alias)
