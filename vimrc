@@ -20,6 +20,7 @@ Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'vim-scripts/a.vim'
 Plugin 'fatih/vim-go'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -87,3 +88,9 @@ function ToggleC()
 endfunction
 
 nmap <Leader>cp :call ToggleC()<CR>
+
+" Rust auto-formatting
+let g:rustfmt_autosave = 1
+
+" Rust extra autocompletion
+let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.6.0/src'
