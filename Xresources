@@ -52,3 +52,8 @@ URxvt.geometry: 100x30
 *.color19:      base02
 *.color20:      base04
 *.color21:      base06
+
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/firefox
+URxvt.url-select.underline: true

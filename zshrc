@@ -88,11 +88,15 @@ export LC_ALL=en_IE.UTF-8
 
 DEFAULT_USER=terry
 
-export GOROOT=/usr/lib/go
-export GOPATH=$HOME/code/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-export EDITOR=vim
 export CC=/usr/bin/clang
 export CXX=/usr/bin/clang++
+export EDITOR=vim
+export GOROOT=/usr/lib/go
+export GOPATH=$HOME/code/gocode
+export GPG_TTY=$(tty)
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/.cargo/bin:$HOME/.gem/ruby/2.3.0/bin
+export WINEPREFIX=$HOME/.wine32
 
 eval $(thefuck --alias)
+
+alias c="xclip -selection clipboard"
