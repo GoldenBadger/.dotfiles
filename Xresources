@@ -1,6 +1,7 @@
 URxvt.font:xft:Terminess\ Powerline:size=12
 URxvt.scrollBar: false
 URxvt.geometry: 100x30
+URxvt.urgentOnBell: true
 
 ! Base16 Mocha
 ! Scheme: Chris Kempson (http://chriskempson.com)

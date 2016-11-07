@@ -13,6 +13,7 @@ Plugin 'rdnetto/YCM-Generator'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'bling/vim-airline'
@@ -21,6 +22,7 @@ Plugin 'vim-scripts/a.vim'
 Plugin 'fatih/vim-go'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
 Plugin 'rust-lang/rust.vim'
+Plugin 'vim-scripts/indentpython.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -93,4 +95,12 @@ nmap <Leader>cp :call ToggleC()<CR>
 let g:rustfmt_autosave = 1
 
 " Rust extra autocompletion
-let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.6.0/src'
+let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.12.1/src'
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Python virtualenv autocompletion
+let g:ycm_python_binary_path = 'python'
