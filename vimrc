@@ -7,7 +7,6 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'nvie/vim-flake8'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'Lokaltog/vim-easymotion'
@@ -22,7 +21,7 @@ Plugin 'vim-scripts/a.vim'
 Plugin 'fatih/vim-go'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
 Plugin 'rust-lang/rust.vim'
-Plugin 'vim-scripts/indentpython.vim'
+Plugin 'klen/python-mode'
 
 call vundle#end()
 filetype plugin indent on
@@ -104,3 +103,7 @@ let g:syntastic_check_on_wq = 0
 
 " Python virtualenv autocompletion
 let g:ycm_python_binary_path = 'python'
+
+" Disable python-mode's syntax checking because syntastic is better
+let g:pymode_lint = 0
+let g:pymode_lint_on_write = 0
