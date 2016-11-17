@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'chriskempson/base16-vim'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
@@ -39,6 +40,10 @@ set number
 
 syntax on
 autocmd vimenter * NERDTree
+
+" Base16 Colourscheme
+let base16colorspace = 256
+colorscheme base16-mocha
 
 " Kill vim if the only window left is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

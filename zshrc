@@ -1,7 +1,8 @@
+fpath+=~/.zfunc
 powerline-daemon -q
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/terry/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -51,11 +52,11 @@ HYPHEN_INSENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git pass)
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/go/bin:/home/terry/code/gocode/bin:/usr/lib/go/bin:/home/terry/code/gocode/bin"
+  export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -88,15 +89,20 @@ export LC_ALL=en_IE.UTF-8
 
 DEFAULT_USER=terry
 
+export GOROOT=/usr/lib/go
+export GOPATH=$HOME/code/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export EDITOR=vim
 export CC=/usr/bin/clang
 export CXX=/usr/bin/clang++
-export EDITOR=vim
-export GOROOT=/usr/lib/go
-export GOPATH=$HOME/code/gocode
-export GPG_TTY=$(tty)
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/.cargo/bin:$HOME/.gem/ruby/2.3.0/bin
-export WINEPREFIX=$HOME/.wine32
+export WINEARCH=win32
+export WINEPREFIX=$HOME/wine32
 
 eval $(thefuck --alias)
 
 alias c="xclip -selection clipboard"
+
+source $HOME/.profile
+
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-mocha.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
