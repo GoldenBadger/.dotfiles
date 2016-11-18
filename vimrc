@@ -16,7 +16,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'vim-scripts/a.vim'
 Plugin 'fatih/vim-go'
@@ -40,10 +41,7 @@ set number
 
 syntax on
 autocmd vimenter * NERDTree
-
-" Base16 Colourscheme
-let base16colorspace = 256
-colorscheme base16-mocha
+autocmd vimenter * AirlineRefresh
 
 " Kill vim if the only window left is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -62,6 +60,8 @@ let mapleader = ","
 
 " Display all buffers when only 1 tab is open
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'base16_mocha'
+let g:airline_powerline_fonts = 1
 
 " Cycle through buffers
 set hidden
@@ -115,3 +115,8 @@ let g:ycm_python_binary_path = 'python'
 " Disable python-mode's syntax checking because syntastic is better
 let g:pymode_lint = 0
 let g:pymode_lint_on_write = 0
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
