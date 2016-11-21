@@ -86,7 +86,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export LC_ALL=en_IE.UTF-8
 
+DEFAULT_USER=$USER
+
 eval $(thefuck --alias)
+
+alias c="xclip -selection clipboard"
 
 source $HOME/.profile
 
