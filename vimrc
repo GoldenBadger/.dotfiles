@@ -99,7 +99,7 @@ nmap <Leader>cp :call ToggleC()<CR>
 let g:rustfmt_autosave = 1
 
 " Rust extra autocompletion
-let g:ycm_rust_src_path = systemlist('rustc --print sysroot')[0] . 'lib/rustlib/src/rust/src'
+let g:ycm_rust_src_path = systemlist('rustc --print sysroot')[0] . '/lib/rustlib/src/rust/src'
 
 " Rust syntax checking
 let g:syntastic_rust_checkers = ['rustc']

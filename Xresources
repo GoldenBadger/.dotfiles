@@ -59,4 +59,4 @@ URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/firefox
 URxvt.url-select.underline: true
 
-rofi.font:	Terminus 12
+rofi.font:Terminess Powerline 12
