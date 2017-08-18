@@ -34,4 +34,6 @@ let g:EasyMotion_smartcase = 1
 " Different ESC
 :inoremap jj <Esc>
 
+set mouse=""
+
 syntax enable
