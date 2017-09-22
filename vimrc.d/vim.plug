@@ -1,0 +1,15 @@
+Plug 'Lokaltog/vim-easymotion'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'chriskempson/base16-vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+Plug 'roxma/clang_complete'
+Plug 'roxma/nvim-cm-racer'
+Plug 'roxma/nvim-completion-manager'
+Plug 'roxma/python-support.nvim'
+Plug 'rust-lang/rust.vim'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'w0rp/ale'
