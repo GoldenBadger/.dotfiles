@@ -1,0 +1,5 @@
+setxkbmap ie
+xrdb -load ~/.Xresources
+exec ~/.fehbg &
+exec compton -bcf &
+pgrep redshift &> /dev/null || redshift -l 53.19:6.14 &> /dev/null &
