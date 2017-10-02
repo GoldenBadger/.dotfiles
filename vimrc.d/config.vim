@@ -1,4 +1,3 @@
-let base16colorspace=256    " Access colours present in 256 colourspace
 colorscheme base16-mocha
 
 filetype plugin on
