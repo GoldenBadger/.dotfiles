@@ -1,6 +1,8 @@
+let base16colorspace=256
+
 colorscheme base16-mocha
 
-filetype plugin on
+filetype plugin indent on
 
 set autoindent
 set expandtab
@@ -32,6 +34,9 @@ let g:EasyMotion_smartcase = 1
 
 " Different ESC
 :inoremap jj <Esc>
+
+" Different leader
+:let mapleader = ','
 
 set mouse=""
 
