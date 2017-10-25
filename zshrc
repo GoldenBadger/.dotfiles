@@ -86,14 +86,14 @@ export LC_ALL=en_IE.UTF-8
 
 DEFAULT_USER=$USER
 
-alias c="xclip -selection clipboard"
-
 source $HOME/.profile
 source $ZSH/oh-my-zsh.sh
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
+alias c="xclip -selection clipboard"
+alias clearsign="$HOME/.dotfiles/clearsign.sh"
 alias tm="tmux a"
 alias vim="nvim"
 
