@@ -88,6 +88,7 @@ DEFAULT_USER=$USER
 
 alias c="xclip -selection clipboard"
 
+source $HOME/.profile
 source $ZSH/oh-my-zsh.sh
 
 BASE16_SHELL=$HOME/.config/base16-shell/
@@ -96,3 +97,4 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 alias tm="tmux a"
 alias vim="nvim"
 
+eval $(thefuck --alias)
