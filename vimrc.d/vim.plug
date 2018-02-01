@@ -2,6 +2,7 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/indentLine'
 Plug 'chriskempson/base16-vim'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'racer-rust/vim-racer'
