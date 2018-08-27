@@ -8,7 +8,6 @@ set shiftround
 set shiftwidth=4
 set showcmd
 set softtabstop=4
-set tabstop=4
 
 " Cycle through buffers
 :nnoremap <C-n> :bnext<CR>

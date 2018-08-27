@@ -9,6 +9,18 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="ys"
 
+# pl9k settings
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(host dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+
+POWERLEVEL9K_HOST_LOCAL_FOREGROUND="black"
+POWERLEVEL9K_HOST_LOCAL_BACKGROUND="03"
+POWERLEVEL9K_HOST_REMOTE_FOREGROUND="black"
+POWERLEVEL9K_HOST_REMOTE_BACKGROUND="16"
+POWERLEVEL9K_SSH_ICON="\uf489"
+
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
