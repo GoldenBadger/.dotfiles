@@ -22,3 +22,4 @@ for f in split(glob('~/.dotfiles/vimrc.d/*.vim'), '\n')
   exe 'source' f
 endfor
 
+let g:go_version_warning = 0

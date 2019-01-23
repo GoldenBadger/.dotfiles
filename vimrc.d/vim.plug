@@ -5,11 +5,11 @@ Plug 'chriskempson/base16-vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'ncm2/ncm2'
+Plug 'ncm2/ncm2-racer'
 Plug 'racer-rust/vim-racer'
 Plug 'roxma/clang_complete'
-Plug 'roxma/nvim-cm-racer'
-Plug 'roxma/nvim-completion-manager'
-Plug 'roxma/python-support.nvim'
+Plug 'roxma/nvim-yarp'
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
